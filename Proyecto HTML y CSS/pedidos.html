@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/principal.css">
+    <link rel="stylesheet" type="text/css" href="css/pedidos.css">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <section id="logo">
+            <img src=imagenes/libros.png alt="Librería Tony"/>
+        </section>
+        <section id="titulo">
+            <h1>Libreria Tony</h1>
+        </section>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="busqueda.html">Búsqueda</a></li>
+            <li><a href="tiendas.html">Tiendas</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+        </ul>
+    </nav>
+    <section id="contenido">
+        <main>
+            <section class="fila">
+                <div class="columna33">
+                    <img src=imagenes/it.jpg id="imgPedido" alt="Aqui iria una foto"/>
+                </div>
+                <div class="columna33">
+                    <p><span>Título:</span>IT(Eso)</p>
+                    <p><span>Autor:</span>Stephen King</p>
+                    <p><span>ISBN:</span>*************</p>
+                </div>
+                <div class="columna33">
+                    <p><span>Editorial:</span>DEBOLSILLO</p>
+                    <p><span>Año:</span>2018</p>
+                </div>
+            </section>
+            <section class="fila">
+                <p>
+                    ¿Quién o qué mutila y mata a los niños de un pequeño pueblo norteamericano? ¿Por qué llega
+                    cíclicamente el horror a Derry en forma de un payaso siniestro que va sembrando la destrucción a su
+                    paso? Esto es lo que se proponen averiguar los protagonistas de esta novela. Tras veintisiete años
+                    de
+                    tranquilidad y lejanía una antigua promesa infantil les hace volver al lugar en el que vivieron su
+                    infancia y juventud como una terrible pesadilla. Regresan a Derry para enfrentarse con su pasado y
+                    enterrar definitivamente la amenaza que los amargó durante su niñez. Saben que pueden morir, pero
+                    son
+                    conscientes de que no conocerán la paz hasta que aquella cosa sea destruida para siempre. It es una
+                    de
+                    las novelas más ambiciosas de Stephen King, donde ha logrado perfeccionar de un modo muy personal
+                    las
+                    claves del género de terror.
+                </p>
+            </section>
+            <section class="fila">
+                <p><span id="precioPedido">Precio: </span>15 euros</p>
+            </section>
+            <section class="fila">
+                <form action="procesar.php" id="formPedido" method="post">
+                    <input type="text" name="nombre" placeholder="Nombre y Apellidos"/>
+                    <textarea rows="4" cols="50" name="direccion" placeholder="Dirección de envío"></textarea>
+                    <input type="text" name="email" placeholder="Dirección de EMail"/>
+                    <input type="number" name="tarjeta" placeholder="Numero de Tarjeta"/>
+                    <div id="tarjetaCVC">
+                        <input type="number" name="caducidad" id="caducidad" placeholder="Caducidad"/>
+                        <input type="number" name="cvc" id="cvc" placeholder="CVC" />
+                    </div>
+                    <span>Marque si procede</span>
+                    <label><input type="checkbox" name="condicion1" value="condicion1"/> He leído y acepto las condiciones de compra</label>
+                    <label><input type="checkbox" name="condicion2" value="condicion2"/> Deseo recibir información sobre novedades</label>
+                    <label><input type="checkbox" name="condicion3" value="condicion3"/> Deseo el envío envuelto para regalo</label>
+                    <input type="submit" value="Hacer Pedido"/>
+                </form>
+            </section>
+        </main>
+
+        <aside>
+            <section>
+                <h1>Más Vendidos</h1>
+                <ul>
+                    <li>El Quijote</li>
+                    <li>Ulises</li>
+                    <li>Arguiñano Cocina</li>
+                </ul>
+            </section>
+            <section>
+                <h1>Más Populares</h1>
+                <ul>
+                    <li>Charles Dickens</li>
+                    <li>Julio Verne</li>
+                    <li>Edgar Allan Poe</li>
+                </ul>
+            </section>
+        </aside>
+    </section>
+
+    <footer>
+        <section>
+            <h1>Granada:</h1>
+            <ul>
+                <li>Reyes Catolicos(555 112233)</li>
+                <li>Avda Dílar(555 221133)</li>
+            </ul>
+            <h1>Malaga</h1>
+        </section>
+        <section id="contacto">
+            <section id="contactoEmail">
+                <img src=imagenes/correo.png alt="libreriaToni@gmail.com"/><span>libreriaToni@gmail.com</span>
+            </section>
+            <section id="contactoRedesSociales">
+                <img src=imagenes/twitter.png alt="Aqui iria una foto"/>
+                <img src=imagenes/facebook.png alt="Aqui iria una foto"/>
+                <img src=imagenes/pinterest.png alt="Aqui iria una foto"/>
+                <img src=imagenes/wire.png alt="Aqui iria una foto"/>
+            </section>
+        </section>
+        <section>
+            <ul id="enlacesFooter">
+                <li>La empresa</li>
+                <li>Política de envio</li>
+                <li>Preguntas Frecuentes</li>
+                <li>Mapa del sitio</li>
+            </ul>
+        </section>
+    </footer>
+</div>
+</body>
+</html>

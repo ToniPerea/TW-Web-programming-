@@ -1,0 +1,35 @@
+.tienda{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+}
+
+.imagenTienda img{
+    width: 100%;
+}
+.contactoTienda{
+    padding: 0 10px;
+}
+.contactoTienda p{
+    font-size: 14px;
+}
+.contactoTienda p span{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 720px) {
+    .tienda{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .imagenTienda img {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 270px) {
+    .imagenTienda img {
+        width: 100px;
+    }
+}

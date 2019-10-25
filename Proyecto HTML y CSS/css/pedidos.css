@@ -1,0 +1,64 @@
+p{
+    text-align: justify;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fila{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+.columna33{
+    flex-grow: 1;
+}
+
+.columna33 p span{
+    font-weight: bold;
+    margin-right: 5px;
+}
+.columna20{
+    width: 20%;
+    text-align: end;
+}
+.columna80{
+    width: 80%;
+}
+
+#imgPedido{
+    width: 100px;
+}
+
+#precioPedido{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#formPedido{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#formPedido *{
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+#tarjetaCVC{
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+}
+#caducidad{
+    flex-grow: 1;
+}
+#cvc{
+    width: 25%;
+}
